@@ -16,7 +16,6 @@ public class MyTest {
         repo.save(first);
         repo.save(second);
         repo.save(third);
-//        repo.removeById(4);
         Assertions.assertThrows(NotFoundException.class, () -> {
             repo.removeById(4);
         });
